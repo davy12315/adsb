@@ -20,6 +20,9 @@ if [ $? -eq 1 ]
 then
 echo `date "+%G-%m-%d %H:%M:%S"`" dump1090            restart"
 echo "------------------------------------------------------------------------"
+sleep 60
+/sbin/shutdown -r now
+/sbin/reboot
 else
 echo `date "+%G-%m-%d %H:%M:%S"`" dump1090            running"
 echo "------------------------------------------------------------------------"
