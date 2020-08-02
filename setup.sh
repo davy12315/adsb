@@ -17,10 +17,6 @@ cd /root/get_message/
 python get_ip.py
 ps aux | grep py
 
-clear
-echo "UUID : "
-nano /root/get_message/UUID
-
 update-alternatives --config editor
 crontab -l > mycron
 #echo new cron into cron file
@@ -40,13 +36,17 @@ chmod +x *.py
 dos2unix *.*
 cd /root
 
+clear
+echo "UUID : "
+nano /root/get_message/UUID
+
 bash /root/get_message/init.sh
 bash /root/task.sh
 clear
 
 echo " "
 echo " "
-echo " "
+echo "安装结束 "
 echo " "
 echo "Standy by 1 minute to reboot and activation..."
 echo "Please copy down the UUID code together with your"
