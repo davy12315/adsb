@@ -17,6 +17,10 @@ cd /root/get_message/
 python get_ip.py
 ps aux | grep py
 
+clear
+echo "UUID : "
+nano /root/get_message/UUID
+
 update-alternatives --config editor
 crontab -l > mycron
 #echo new cron into cron file
@@ -42,8 +46,6 @@ clear
 
 echo " "
 echo " "
-echo "UUID : "
-nano /root/get_message/UUID
 echo " "
 echo " "
 echo "Standy by 1 minute to reboot and activation..."
