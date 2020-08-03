@@ -9,7 +9,7 @@ echo "This setup script just borrow the existing feeder Dump1090 decoder to func
 echo " "
 
 apt-get update -y
-apt-get upgrade -y
+#apt-get upgrade -y
 apt-get install dos2unix -y
 
 cd /root
