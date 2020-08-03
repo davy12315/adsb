@@ -34,6 +34,8 @@ rm mycron
 crontab -e
 
 clear
+echo " "
+echo " "
 echo "UUID : "
 nano /root/get_message/UUID
 
@@ -42,8 +44,6 @@ bash /root/task.sh
 clear
 
 echo " "
-echo " "
-echo "安装结束 "
 echo " "
 echo "Standy by 1 minute to reboot and activation..."
 echo "Please copy down the UUID code together with your"
