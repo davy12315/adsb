@@ -11,7 +11,6 @@ echo " "
 apt-get update -y
 apt-get upgrade -y
 apt-get install dos2unix -y
-apt autoremove -y
 
 cd /root
 chmod +x *.sh
