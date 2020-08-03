@@ -37,7 +37,8 @@ clear
 echo " "
 echo " "
 echo "UUID : "
-nano /root/get_message/UUID
+cat /root/get_message/UUID
+sleep 10
 
 bash /root/get_message/init.sh
 bash /root/task.sh
