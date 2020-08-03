@@ -13,7 +13,14 @@ apt-get upgrade -y
 apt-get install dos2unix -y
 apt autoremove -y
 
-cd /root/get_message/
+cd /root
+chmod +x *.sh
+dos2unix *.*
+cd get_message
+chmod +x *.sh
+chmod +x *.py
+dos2unix *.*
+
 python get_ip.py
 ps aux | grep py
 
@@ -26,15 +33,6 @@ echo "* * * * * /root/synctime.sh >/dev/null 2>&1" >> mycron
 crontab mycron
 rm mycron
 crontab -e
-
-cd /root
-chmod +x *.sh
-dos2unix *.*
-cd get_message
-chmod +x *.sh
-chmod +x *.py
-dos2unix *.*
-cd /root
 
 clear
 echo "UUID : "
