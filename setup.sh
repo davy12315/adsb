@@ -38,8 +38,9 @@ echo " "
 echo " "
 echo "UUID : "
 cat /root/get_message/UUID
-sleep 10
-
+sleep 20
+echo " "
+echo " "
 bash /root/get_message/init.sh
 bash /root/task.sh
 clear
