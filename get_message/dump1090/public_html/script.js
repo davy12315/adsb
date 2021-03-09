@@ -290,7 +290,7 @@ function refreshTableInfo() {
 	html += '<td onclick="setASC_DESC(\'6\');sortTable(\'tableinfo\',\'7\');" ' +
 	    'align="right">消息数</td>';
 	html += '<td onclick="setASC_DESC(\'7\');sortTable(\'tableinfo\',\'8\');" ' +
-	    'align="right">消</td></thead><tbody>';
+	    'align="right">消息</td></thead><tbody>';
 	for (var tablep in Planes) {
 		var tableplane = Planes[tablep]
 		if (!tableplane.reapable) {
