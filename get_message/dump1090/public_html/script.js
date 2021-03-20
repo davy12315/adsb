@@ -70,7 +70,7 @@ function initialize() {
 		//图块取图地址
 		tileUrl:'https://mt{1,2,3,0}.google.cn/vt/lyrs=m@142&hl=zh-CN&gl=cn&x=[x]&y=[y]&z=[z]&s=Galil'
 	});
-	google.setMap(null);
+	google.setMap(aMap);
 
 	// Listeners for newly created Map
 	aMap.on('moveend', function() {
