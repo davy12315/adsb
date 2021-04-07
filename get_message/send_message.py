@@ -26,6 +26,23 @@ else :
         file_object.write( mid )
         file_object.close()
 
+def insert_mid(file_path='', mid=''):
+    lines = []
+    try:
+        with open(file_path, 'r') as f:
+            for line in f:
+                lines.append(line)
+    except IOError:
+        pass
+
+    if len(lines) >= 26:
+        if lines[26].find('<h5>') < 0:
+            lines.insert(26, '<h5>UUID: %s</h5>\n' %mid)
+            with open(file_path, 'w+') as f:
+                for line in lines:
+                    f.write(line)
+
+insert_mid(file_path=r'/root/dump1090/public_html/gmap.html', mid=mid)
 
 sockobj = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 sockobj.connect((serverHost,serverPort))
