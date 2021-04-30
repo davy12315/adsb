@@ -11,7 +11,7 @@ Metric = false; // true or false
 
 // -- Map settings ----------------------------------------
 // The Latitude and Longitude in decimal format
-CONST_CENTERLAT = 31.52;
+CONST_CENTERLAT = 31.5;
 CONST_CENTERLON = 117.17;
 // The google maps zoom level, 0 - 16, lower is further out
 CONST_ZOOMLVL   = 5;
@@ -25,8 +25,8 @@ StaleColor = "rgb(190, 190, 190)";
 // -- Site Settings ---------------------------------------
 SiteShow    = false; // true or false
 // The Latitude and Longitude in decimal format
-SiteLat     = 45.0;
-SiteLon     = 9.0;
+SiteLat     = 45;
+SiteLon     = 9;
 
 SiteCircles = true; // true or false (Only shown if SiteShow is true)
 // In nautical miles or km (depending settings value 'Metric')
