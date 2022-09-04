@@ -55,7 +55,7 @@ var planeObject = {
 	funcGetIcon	: function() {
 		const prefix = 'https://file.veryzhun.com/buckets/adsb-dm/keys/';
 
-		this.markerColor = '20200319-105605-zuf2o7rth4mrx6si.png';
+		this.markerColor = '20200319-110959-xr2mm7mhtt7r9s32.png';
 		// If this marker is selected we should make it lighter than the rest.
 		if (this.is_selected == true) {
 			this.markerColor = '20200319-110905-vo88ewef3rsfriws.png';
